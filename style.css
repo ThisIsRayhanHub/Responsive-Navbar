@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+   background-image: url(./img/weekend.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px;
+    background: rgba(0, 0, 0, 0.29);
+     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo a{
+    text-decoration: none;
+   
+    font-size: 25px;
+    color: white;
+}
+.logo a span{
+    color: cornflowerblue;
+    font-weight: bold;
+
+}.menu-items nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex
+}
+.menu-items nav ul li{
+    height: 50px;
+}
+.menu-items nav ul li a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+/* .menu-items nav ul li a:hover{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    padding: 4px 5px ;
+    border-radius: 10px;
+    background: #f0f0f02b;
+} */
+.btn{
+    display: flex;
+    align-items: center;
+}
+.btn button{
+    background: none;
+    border: 2px solid rgba(255, 255, 255, 0.265);
+    border-radius: 15px;
+    padding: 10px 15px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+
+    /* padding: 10px 15px; */
+}
+
+.btn button:hover{
+    background: #5b5a5a;
+    transition: all 0.3s ease-out;
+}
+.menuIcon{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    display: none;
+}
+.menuIcon img{
+    width: 40px;
+    height: 40px;
+
+}
+
+
+
+
+
+@media(max-width:800px){
+    .menu-items,.btn {
+       display: none;
+    }
+    .menuIcon{
+        display: block;
+    }
+}
